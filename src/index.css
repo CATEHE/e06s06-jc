@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: inherit, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-balance;
+  }
+  
+  p{
+    @apply text-pretty;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply block bg-blue-500 text-white font-semibold text-center rounded-sm px-4 py-2;
+}
+  .input-form{
+    @apply border bg-blue-100 py-3 px-4 rounded-lg w-full focus:outline-none;
+}
+  .error-validation {
+    @apply  text-red-500 text-xs font-semibold;
+  }
+}
+
+
+@layer utilities{
+  .bg-attachment {
+    background-attachment: fixed;
+  }
+
+
+}
